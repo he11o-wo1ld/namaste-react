@@ -1,22 +1,12 @@
-const parent = React.createElement("div", {id:"parent"},[
-    React.createElement("div", {id:"child1"}, [
-        React.createElement("h1", {}, "Inner Header 1"),
-        React.createElement("h2", {}, "Inner Header 2"),
-    ]),
-    React.createElement("div", {id:"child2"}, [
-        React.createElement("h1", {}, "Inner Header 1"),
-        React.createElement("h2", {}, "Inner Header 2"),
-    ]),
-    React.createElement("div", {id:"child3"}, [
-        React.createElement("h1", {}, "Inner Header 1"),
-        React.createElement("h2", {}, "Inner Header 2"),
-    ]),
-]);
+import React from "react";
+import ReactDOM from "react-dom/client";
 
 
-
-
-// const heading = React.createElement("h1", {id:"heading"}, "Hello World From React From File!");
+// React Element
+// JSX (transplied before it reaches the JS) - Parcel - Bable
+// JSX => React.createElement => ReactElement-JS Object => HTML Element(render)
+const jsxHeading = <h1 id="heading" className="head">Namaste React from JSX</h1>;
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(parent);
+
+root.render(jsxHeading);

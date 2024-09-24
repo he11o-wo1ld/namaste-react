@@ -26,7 +26,7 @@ const Body = () => {
 
 
     // Conditional Rendering
-    return listOfResturants.length <= 0 ? (
+    return listOfResturants?.length <= 0 ? (
         <Shimmer/> 
     ) : (
         <div className="body">
@@ -62,7 +62,7 @@ const Body = () => {
             
             <div className="res-container">
                 
-                {filterResturants.map((restaurant) => (
+                {filterResturants?.map((restaurant) => (
                     <Resturant 
                         resData = {restaurant}
                         key={restaurant?.info.id}

@@ -23,7 +23,7 @@ const Header = () => {
                     <li><Link to = "/">Home</Link></li>
                     <li><Link to =  "/about">About Us</Link></li>
                     <li><Link to =  "/contact">Contact Us</Link></li>
-                    <li><Link>Cart</Link></li>
+                    {/* <li><Link>Cart</Link></li> */}
                     <button className="login-button" onClick={changeButton}>{btnName}</button>
                 </ul>
             </div>

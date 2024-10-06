@@ -24,8 +24,7 @@ const Body = () => {
         const jsonData = await data.json();
         
         // Optional Chaining
-        const resturants = jsonData?.data?.cards?.[2]?.card?.card?.gridElements?.infoWithStyle?.restaurants;
-        console.log("jsonData : ", jsonData.data.cards);
+        const resturants = jsonData?.data?.cards?.[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants;
 
         setListOfResturants(resturants);
         setFilterResturants(resturants);
@@ -45,26 +44,30 @@ const Body = () => {
         return listOfResturants?.length <= 0 ? (
             <Shimmer/> 
         ) : (
-            <div className="body">
-                <div className="filter">
-                    <input 
-                        type="text" 
-                        className="search-box" 
-                        value={searchText}
-                        onChange={(e) => {
-                            setSearchText(e.target.value)
-                        }}
-                    />
-                    <button onClick={() => {
+            <div className="body m-4 p-4">
+                <div className="filter flex">
+                    <div className="search">                        
+                        <input 
+                            type="text" 
+                            className="border p-4 m-4 border-solid border-black rounded-lg hover:scale-110 transition-transform duration-300" 
+                            value={searchText}
+                            onChange={(e) => {
+                                setSearchText(e.target.value)
+                            }}
+                        />
+                    </div>
+                    <button 
+                        className="px-4 py-1 bg-green-100 m-4 rounded-lg hover:scale-110 transition-transform duration-300 hover:text-green-700 hover:shadow-lg shadow-green-500"
+                        onClick={() => {
                         const filterRestrants = listOfResturants.filter((res) => 
                             res.info.name.toLowerCase().includes(searchText.toLowerCase())
                         );
 
                         setFilterResturants(filterRestrants);
-                    }}>search</button>
+                    }} >search</button>
 
                     <button 
-                        className="filter-btn"
+                        className="px-4 py-2 bg-yellow-400 m-4 rounded-xl hover:scale-110 transition-transform duration-300 hover:text-yellow-700 hover:shadow-lg shadow-yellow-600"
                         onClick={() =>{
                             const filterList = listOfResturants.filter(
                                 (item) => item.info.avgRating > 4.2
@@ -74,9 +77,11 @@ const Body = () => {
                     >
                         Top Rated Resturants
                     </button>
+                    
+
                 </div>
                 
-                <div className="res-container">
+                <div className="flex flex-wrap">
                     
                     {filterResturants?.map((restaurant) => (
                         

@@ -21,29 +21,29 @@ const Shimmer = () => {
 
             </div>
             <div className="flex flex-wrap">
-            <div className="m-4 p-4 w-[250px] h-[400px] rounded-lg shadow-2xl hover:scale-110 transition-transform duration-300 hover:shadow-orange-300">Cards</div>
-            <div className="m-4 p-4 w-[250px] h-[400px] rounded-lg shadow-2xl hover:scale-110 transition-transform duration-300 hover:shadow-orange-300">Cards</div>
-            <div className="m-4 p-4 w-[250px] h-[400px] rounded-lg shadow-2xl hover:scale-110 transition-transform duration-300 hover:shadow-orange-300">Cards</div>
-            <div className="m-4 p-4 w-[250px] h-[400px] rounded-lg shadow-2xl hover:scale-110 transition-transform duration-300 hover:shadow-orange-300">Cards</div>
-            <div className="m-4 p-4 w-[250px] h-[400px] rounded-lg shadow-2xl hover:scale-110 transition-transform duration-300 hover:shadow-orange-300">Cards</div>
-            <div className="m-4 p-4 w-[250px] h-[400px] rounded-lg shadow-2xl hover:scale-110 transition-transform duration-300 hover:shadow-orange-300">Cards</div>
-            <div className="m-4 p-4 w-[250px] h-[400px] rounded-lg shadow-2xl hover:scale-110 transition-transform duration-300 hover:shadow-orange-300">Cards</div>
-            <div className="m-4 p-4 w-[250px] h-[400px] rounded-lg shadow-2xl hover:scale-110 transition-transform duration-300 hover:shadow-orange-300">Cards</div>
-            <div className="m-4 p-4 w-[250px] h-[400px] rounded-lg shadow-2xl hover:scale-110 transition-transform duration-300 hover:shadow-orange-300">Cards</div>
-            <div className="m-4 p-4 w-[250px] h-[400px] rounded-lg shadow-2xl hover:scale-110 transition-transform duration-300 hover:shadow-orange-300">Cards</div>
-            <div className="m-4 p-4 w-[250px] h-[400px] rounded-lg shadow-2xl hover:scale-110 transition-transform duration-300 hover:shadow-orange-300">Cards</div>
-            <div className="m-4 p-4 w-[250px] h-[400px] rounded-lg shadow-2xl hover:scale-110 transition-transform duration-300 hover:shadow-orange-300">Cards</div>
-            <div className="m-4 p-4 w-[250px] h-[400px] rounded-lg shadow-2xl hover:scale-110 transition-transform duration-300 hover:shadow-orange-300">Cards</div>
-            <div className="m-4 p-4 w-[250px] h-[400px] rounded-lg shadow-2xl hover:scale-110 transition-transform duration-300 hover:shadow-orange-300">Cards</div>
-            <div className="m-4 p-4 w-[250px] h-[400px] rounded-lg shadow-2xl hover:scale-110 transition-transform duration-300 hover:shadow-orange-300">Cards</div>
-            <div className="m-4 p-4 w-[250px] h-[400px] rounded-lg shadow-2xl hover:scale-110 transition-transform duration-300 hover:shadow-orange-300">Cards</div>
-            <div className="m-4 p-4 w-[250px] h-[400px] rounded-lg shadow-2xl hover:scale-110 transition-transform duration-300 hover:shadow-orange-300">Cards</div>
-            <div className="m-4 p-4 w-[250px] h-[400px] rounded-lg shadow-2xl hover:scale-110 transition-transform duration-300 hover:shadow-orange-300">Cards</div>
-            <div className="m-4 p-4 w-[250px] h-[400px] rounded-lg shadow-2xl hover:scale-110 transition-transform duration-300 hover:shadow-orange-300">Cards</div>
-            <div className="m-4 p-4 w-[250px] h-[400px] rounded-lg shadow-2xl hover:scale-110 transition-transform duration-300 hover:shadow-orange-300">Cards</div>
-            <div className="m-4 p-4 w-[250px] h-[400px] rounded-lg shadow-2xl hover:scale-110 transition-transform duration-300 hover:shadow-orange-300">Cards</div>
-            <div className="m-4 p-4 w-[250px] h-[400px] rounded-lg shadow-2xl hover:scale-110 transition-transform duration-300 hover:shadow-orange-300">Cards</div>
-            <div className="m-4 p-4 w-[250px] h-[400px] rounded-lg shadow-2xl hover:scale-110 transition-transform duration-300 hover:shadow-orange-300">Cards</div>
+            <div className="m-4 p-4 w-[250px] h-[400px] rounded-lg shadow-2xl hover:scale-110 transition-transform duration-300 hover:shadow-orange-300"></div>
+            <div className="m-4 p-4 w-[250px] h-[400px] rounded-lg shadow-2xl hover:scale-110 transition-transform duration-300 hover:shadow-orange-300"></div>
+            <div className="m-4 p-4 w-[250px] h-[400px] rounded-lg shadow-2xl hover:scale-110 transition-transform duration-300 hover:shadow-orange-300"></div>
+            <div className="m-4 p-4 w-[250px] h-[400px] rounded-lg shadow-2xl hover:scale-110 transition-transform duration-300 hover:shadow-orange-300"></div>
+            <div className="m-4 p-4 w-[250px] h-[400px] rounded-lg shadow-2xl hover:scale-110 transition-transform duration-300 hover:shadow-orange-300"></div>
+            <div className="m-4 p-4 w-[250px] h-[400px] rounded-lg shadow-2xl hover:scale-110 transition-transform duration-300 hover:shadow-orange-300"></div>
+            <div className="m-4 p-4 w-[250px] h-[400px] rounded-lg shadow-2xl hover:scale-110 transition-transform duration-300 hover:shadow-orange-300"></div>
+            <div className="m-4 p-4 w-[250px] h-[400px] rounded-lg shadow-2xl hover:scale-110 transition-transform duration-300 hover:shadow-orange-300"></div>
+            <div className="m-4 p-4 w-[250px] h-[400px] rounded-lg shadow-2xl hover:scale-110 transition-transform duration-300 hover:shadow-orange-300"></div>
+            <div className="m-4 p-4 w-[250px] h-[400px] rounded-lg shadow-2xl hover:scale-110 transition-transform duration-300 hover:shadow-orange-300"></div>
+            <div className="m-4 p-4 w-[250px] h-[400px] rounded-lg shadow-2xl hover:scale-110 transition-transform duration-300 hover:shadow-orange-300"></div>
+            <div className="m-4 p-4 w-[250px] h-[400px] rounded-lg shadow-2xl hover:scale-110 transition-transform duration-300 hover:shadow-orange-300"></div>
+            <div className="m-4 p-4 w-[250px] h-[400px] rounded-lg shadow-2xl hover:scale-110 transition-transform duration-300 hover:shadow-orange-300"></div>
+            <div className="m-4 p-4 w-[250px] h-[400px] rounded-lg shadow-2xl hover:scale-110 transition-transform duration-300 hover:shadow-orange-300"></div>
+            <div className="m-4 p-4 w-[250px] h-[400px] rounded-lg shadow-2xl hover:scale-110 transition-transform duration-300 hover:shadow-orange-300"></div>
+            <div className="m-4 p-4 w-[250px] h-[400px] rounded-lg shadow-2xl hover:scale-110 transition-transform duration-300 hover:shadow-orange-300"></div>
+            <div className="m-4 p-4 w-[250px] h-[400px] rounded-lg shadow-2xl hover:scale-110 transition-transform duration-300 hover:shadow-orange-300"></div>
+            <div className="m-4 p-4 w-[250px] h-[400px] rounded-lg shadow-2xl hover:scale-110 transition-transform duration-300 hover:shadow-orange-300"></div>
+            <div className="m-4 p-4 w-[250px] h-[400px] rounded-lg shadow-2xl hover:scale-110 transition-transform duration-300 hover:shadow-orange-300"></div>
+            <div className="m-4 p-4 w-[250px] h-[400px] rounded-lg shadow-2xl hover:scale-110 transition-transform duration-300 hover:shadow-orange-300"></div>
+            <div className="m-4 p-4 w-[250px] h-[400px] rounded-lg shadow-2xl hover:scale-110 transition-transform duration-300 hover:shadow-orange-300"></div>
+            <div className="m-4 p-4 w-[250px] h-[400px] rounded-lg shadow-2xl hover:scale-110 transition-transform duration-300 hover:shadow-orange-300"></div>
+            <div className="m-4 p-4 w-[250px] h-[400px] rounded-lg shadow-2xl hover:scale-110 transition-transform duration-300 hover:shadow-orange-300"></div>
         </div>
         </div>
     )

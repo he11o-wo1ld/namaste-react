@@ -16,18 +16,18 @@ const Header = () => {
     }
 
     return (
-        <div className="header">
+        <div className="flex justify-between bg-orange-400 shadow-xl ">
             <div>
-                <img className="logo" src={LOGO_URL}/>
+            <Link to = "/"><img className="w-36 object-cover" src={LOGO_URL}/></Link>
             </div>
-            <div className="nav-items">
-                <ul>
-                    <li>Online Status : { onlineStatus ? "🟢" : "🔴" }</li>
-                    <li><Link to = "/">Home</Link></li>
-                    <li><Link to = "/about">About Us</Link></li>
-                    <li><Link to = "/contact">Contact Us</Link></li>
-                    <li><Link to = "/grocery">Grocery</Link></li>
-                    <button className="login-button" onClick={changeButton}>{btnName}</button>
+            <div className="flex items-center">
+                <ul className="flex p-4 m-4">
+                    <li className="px-4 text-2xl text-white hover:scale-110 transition-transform duration-300 hover:text-orange-700">Online Status : { onlineStatus ? "🟢" : "🔴" }</li>
+                    <li className="px-4 text-2xl text-white hover:scale-110 transition-transform duration-300 hover:text-orange-700"><Link to = "/">Home</Link></li>
+                    <li className="px-4 text-2xl text-white hover:scale-110 transition-transform duration-300 hover:text-orange-700"><Link to = "/about">About Us</Link></li>
+                    <li className="px-4 text-2xl text-white hover:scale-110 transition-transform duration-300 hover:text-orange-700"><Link to = "/contact">Contact Us</Link></li>
+                    <li className="px-4 text-2xl text-white hover:scale-110 transition-transform duration-300 hover:text-orange-700"><Link to = "/grocery">Grocery</Link></li>
+                    <button className="border-solid text-2xl text-white hover:scale-110 transition-transform duration-300 hover:text-orange-700" onClick={changeButton}>{btnName}</button>
                 </ul>
             </div>
         </div>

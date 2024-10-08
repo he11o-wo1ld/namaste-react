@@ -22,4 +22,16 @@ const Resturant = (props) => {
 }
 
 
+export const withPromotedLabel = (Resturant) => {
+    return (props) => {
+        return (
+            <div>
+                <label className="absolute bg-black text-white m-2 p-2 rounded-lg">Badge</label>
+                <Resturant {...props}/>
+            </div>
+        )
+    }
+}
+
+
 export default Resturant;

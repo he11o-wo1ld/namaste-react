@@ -22,12 +22,12 @@ const Header = () => {
             </div>
             <div className="flex items-center">
                 <ul className="flex p-4 m-4">
-                    <li className="px-4 text-2xl text-white hover:scale-110 transition-transform duration-300 hover:text-orange-700">Online Status : { onlineStatus ? "🟢" : "🔴" }</li>
-                    <li className="px-4 text-2xl text-white hover:scale-110 transition-transform duration-300 hover:text-orange-700"><Link to = "/">Home</Link></li>
-                    <li className="px-4 text-2xl text-white hover:scale-110 transition-transform duration-300 hover:text-orange-700"><Link to = "/about">About Us</Link></li>
-                    <li className="px-4 text-2xl text-white hover:scale-110 transition-transform duration-300 hover:text-orange-700"><Link to = "/contact">Contact Us</Link></li>
-                    <li className="px-4 text-2xl text-white hover:scale-110 transition-transform duration-300 hover:text-orange-700"><Link to = "/grocery">Grocery</Link></li>
-                    <button className="border-solid text-2xl text-white hover:scale-110 transition-transform duration-300 hover:text-orange-700" onClick={changeButton}>{btnName}</button>
+                <li className="px-4 text-2xl text-orange-700 hover:scale-110 transition-transform duration-300 hover:text-white">Online Status : { onlineStatus ? "🟢" : "🔴" }</li>
+                    <li className="px-4 text-2xl text-orange-700 hover:scale-110 transition-transform duration-300 hover:text-white"><Link to = "/">Home</Link></li>
+                    <li className="px-4 text-2xl text-orange-700 hover:scale-110 transition-transform duration-300 hover:text-white"><Link to = "/about">About Us</Link></li>
+                    <li className="px-4 text-2xl text-orange-700 hover:scale-110 transition-transform duration-300 hover:text-white"><Link to = "/contact">Contact Us</Link></li>
+                    <li className="px-4 text-2xl text-orange-700 hover:scale-110 transition-transform duration-300 hover:text-white"><Link to = "/grocery">Grocery</Link></li>
+                    <button className="border-solid text-2xl text-orange-700 hover:scale-110 transition-transform duration-300 hover:text-white" onClick={changeButton}>{btnName}</button>
                 </ul>
             </div>
         </div>

@@ -1,15 +1,15 @@
 import {LOGO_URL} from "../utils/constants"
-import { useState, useEffect } from "react";
+import { useState, useContext } from "react";
 import { Link } from "react-router-dom";
 import useOnlineStatus from "../utils/useOnlineStatus";
+import userContext from "../utils/userContext";
 
 const Header = () => {
     const [btnName, setBtnName] = useState("Login");
+
     const onlineStatus = useOnlineStatus();
 
-    useEffect(() => {
-        console.log("Header Render");
-    }, []);
+    const { loggedInUser } = useContext(userContext);
 
     const changeButton = () => {
         return (btnName === "Login") ? (setBtnName("Logout")) : setBtnName("Login")
@@ -28,6 +28,7 @@ const Header = () => {
                     <li className="px-4 text-2xl text-orange-700 hover:scale-110 transition-transform duration-300 hover:text-white"><Link to = "/contact">Contact Us</Link></li>
                     <li className="px-4 text-2xl text-orange-700 hover:scale-110 transition-transform duration-300 hover:text-white"><Link to = "/grocery">Grocery</Link></li>
                     <button className="border-solid text-2xl text-orange-700 hover:scale-110 transition-transform duration-300 hover:text-white" onClick={changeButton}>{btnName}</button>
+                    <li className="px-4 text-2xl text-orange-700 hover:scale-110 transition-transform duration-300 hover:text-white">{loggedInUser}</li>
                 </ul>
             </div>
         </div>

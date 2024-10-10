@@ -1,10 +1,11 @@
 import { Link } from "react-router-dom";
 import Resturant, {withPromotedLabel} from "./RestaurantCard";
 import Shimmer from "./Shimmer";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
 import useOnlineStatus from "../utils/useOnlineStatus";
 import useRestaurant from "../utils/useRestaurant";
 import { SWIGGY_URL } from "../utils/constants";
+import userContext from "../utils/userContext";
 
 const Body = () => {
     // const restaurant = useRestaurant();
@@ -41,8 +42,9 @@ const Body = () => {
             <h1>Looks like you are Offline! Please Check Your Internet or WiFi Connection.</h1> 
         );
     } else {
-
         // Conditional Rendering
+        const { loggedInUser, setUserName } = useContext(userContext);
+
         return listOfResturants?.length <= 0 ? (
             <Shimmer/> 
         ) : (
@@ -80,6 +82,14 @@ const Body = () => {
                         Top Rated Resturants
                     </button>
                     
+                    <div>
+                        <label>UserName : </label>
+                        <input 
+                            className="border p-4 m-4 border-solid border-black rounded-lg hover:scale-110 transition-transform duration-300"
+                            value={loggedInUser}
+                            onChange={(e) => setUserName(e.target.value)}
+                        />
+                    </div>
 
                 </div>
                 

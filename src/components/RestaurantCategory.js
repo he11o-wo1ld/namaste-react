@@ -1,13 +1,17 @@
 import ItemList from "./ItemList";
-import {useState} from "react";
 
-const RestaurantCategory = (props) => {
-    const {title, itemCards} = props.data;
 
-    const [showItems, setShowItems] = useState(true);
+const RestaurantCategory = ({ data, showItems, setShowIndex, itemIndex }) => {
 
-    const handleClick = () => {
-        setShowItems(!showItems);
+    const {title, itemCards} = data;
+    
+    const handleClick = (itemIndex) => {
+        console.log("itemIndex : ", itemIndex)
+        
+        if(setShowIndex() === itemIndex){
+            setShowIndex(!itemIndex);
+        }
+        setShowIndex();
     }
 
     return (
@@ -16,7 +20,7 @@ const RestaurantCategory = (props) => {
                 <span className="text-xl font-semibold">{title} ({itemCards.length})</span>
                 <span>🔽</span>
             </div>
-            {showItems && <ItemList items={itemCards}/>}
+            {showItems && <ItemList items={itemCards} dummy={itemIndex}/>}
         </div>
     );
 }

@@ -1,6 +1,15 @@
-import {ITEM_IMAGE_URL} from "../utils/constants"
+import { useDispatch } from "react-redux";
+import { ITEM_IMAGE_URL } from "../utils/constants";
+import { addItem } from "../utils/cartSlice";
 
 const ItemList = ({ items, dummy }) => {
+    const dispatch = useDispatch();
+
+    const handleAddItem = (item) => {
+        // Dispatch an action
+        console.log("Ites", item)
+        dispatch(addItem(item));
+    };
 
     return (
         <div>
@@ -24,7 +33,10 @@ const ItemList = ({ items, dummy }) => {
                     </div>
                     <div className="w-3/12 p-4">
                         <div className="absolute">
-                            <button className="px-8 py-2 mx-5 my-28 bg-white shadow-lg m-auto font-bold text-green-600 rounded-lg bottom hover:scale-110 transition-transform duration-300 hover:bg-gray-300">
+                            <button 
+                                className="px-8 py-2 mx-5 my-28 bg-white shadow-lg m-auto font-bold text-green-600 rounded-lg bottom hover:scale-110 transition-transform duration-300 hover:bg-gray-300"
+                                onClick={() => {handleAddItem(item)}}
+                            >
                                     ADD  
                             </button>
                         </div>

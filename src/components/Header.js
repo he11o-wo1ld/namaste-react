@@ -14,7 +14,6 @@ const Header = () => {
 
     // Subscribing to the store using a Selector
     const cartItems = useSelector((store) => store.cart.items);
-    console.log(cartItems);
 
     const changeButton = () => {
         return (btnName === "Login") ? (setBtnName("Logout")) : setBtnName("Login")
@@ -23,7 +22,7 @@ const Header = () => {
     return (
         <div className="flex justify-between bg-orange-400 shadow-xl ">
             <div>
-            <Link to = "/"><img className="w-36 object-cover" src={LOGO_URL}/></Link>
+            <Link to = "/"><img className="w-36 object-cover mix-blend-color-burn hover:scale-110 transition-transform duration-300" src={LOGO_URL}/></Link>
             </div>
             <div className="flex items-center">
                 <ul className="flex p-4 m-4">
